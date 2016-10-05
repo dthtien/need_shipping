@@ -1,0 +1,398 @@
+<?php
+if(isset($_GET["p"]))
+$p=$_GET["p"];
+else 
+$p="";
+?>
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Need-Shipping Ship tìm người, Người tìm ship</title>
+    <meta name="title" content="Need-Shipping Ship tìm người, Người tìm ship">
+    <meta name="description" content="Need-Shipping cộng đồng ship tìm người - người tìm ship">
+    <meta name="keywords" content="tìm shipper, cần shipper, cần ship, vận chuyển nhanh, vận chuyển">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <meta name="google-site-verification" content="DT93bXLXI0Z780b1OTJ0lpChQRka5556aGwP7R7i2xM">
+
+    <meta property="og:site_name" content="#">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:description" content="Need-Shipping cộng đồng ship tìm người - người tìm ship">
+    <meta property="og:image" content="https://s-media-cache-ak0.pinimg.com/originals/51/4c/38/514c38b74491280b2647fdb230e8d08b.jpg"><!--Để hình logo-->
+    <meta property="og:image:width" content="192">
+    <meta property="og:image:height" content="192">
+    <!-- Favicons -->
+    <link rel="icon" href="./images/logo1.png"><!--để icon-->
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/toastr.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- Js -->
+    <script async="" src="./js/fbevents.js.download"></script><script src="./js/jquery-1.11.2.min.js.download"></script>
+    <script src="./js/bootstrap.min.js.download"></script>
+    <script src="./js/jquery.validate.min.js.download"></script>
+    <script src="./js/toastr.min.js.download"></script>
+    <script src="./js/swiper.min.js.download"></script>
+    <script src="./js/wow.min.js.download"></script>
+    <script src="./js/f-home.js.download"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <script src="./js/ie-emulation-modes-warning.js.download"></script>
+    <!--[if lt IE 9]>
+    <script src="/Scripts/v3/libs/html5shiv.min.js"></script>
+    <script src="/Scripts/v3/libs/respond.min.js"></script>
+    <![endif]-->
+	<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+	n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+	document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+	fbq('init', '1730248857223202');
+	fbq('track', "PageView");	
+	fbq('track', 'ViewContent');
+	fbq('track', 'Search');fbq('track', 'AddToCart');
+	fbq('track', 'AddToWishlist');
+	fbq('track', 'InitiateCheckout');
+	fbq('track', 'AddPaymentInfo');
+	fbq('track', 'Purchase', {value: '1.00', currency: 'USD'});
+	fbq('track', 'Lead');
+	fbq('track', 'CompleteRegistration');
+	</script>
+	<noscript>&lt;img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=1730248857223202&amp;ev=PageView&amp;noscript=1"
+	/&gt;</noscript>
+	<!-- End Facebook Pixel Code -->
+
+</head>
+<body>
+
+<div class="s5h-header">
+    <div class="container">
+    <!--<li><a href="index.html" class="w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Nd</a></li>-->
+       <!-- <a class="s5h-logo" href="index.html" title=""><i class="fa fa-home w3-margin-right"></i> Need Shipping<br><i><p style="font-size:10px">Ship tìm người - Người tìm ship</p></i></a>-->
+        <a class="s5h-logo" href="index.html" title=""><img src="./images/Logo1.png" alt=""></a>
+        <span class="s5h-menuicon"><i class="fa fa-bars"></i></span>
+        <ul class="s5h-menu">  <!--F24738-->
+            <li><a class="active" href="index.html" title="TRANG CHỦ">TRANG CHỦ</a> </li>
+            <li><a href="huongdan.html;" class="link-guide" title="HƯỚNG DẪN">HƯỚNG DẪN</a> </li>
+            <li><a href="dieukhoan.html" title="CHÍNH SÁCH">CHÍNH SÁCH</a> </li>
+            <li><a href="javascript:;" class="link-contact" title="LIÊN LẠC">CONTACT</a> </li>
+            <li>
+                <a href="dangnhap.html" style="color: #F24738; font-size: 18px;" title="Giao Hàng Ngay">
+                  <i class="fa fa-truck w3-margin-right"></i>
+                  GIAO HÀNG NGAY 
+                </a> 
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <div class="s5h-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12  col-sm-push-6">
+                    <div class="s5h-bntitle"><p>Trang vận chuyển </p><p> Của cộng đồng Ship tìm người- người tìm ship<br>Giúp bạn tìm shipper và đơn hàng dễ dàng, nhanh chóng.</p></div>
+                    <div class="s5h-bninfo"></div>
+                   <div class="s5h-bntitle"> <p>Đăng nhập để đăng hoặc tìm đơn hàng</p></div>
+                    <ul class="s5h-bndown-ul">
+                    <li class="s5h-bndown-lg"><a href="dangnhap.html" style=" color: #fff; font-size: 18px; " title="Đăng Nhập">
+                             <i class="fa fa-sign-in w3-margin-right"></i>
+                             ĐĂNG NHẬP
+                        </a></li>
+                        <li class="s5h-bndown-lo"><a href="dangky.html" style=" color: #fff; font-size: 18px; " title="Đăng ký nếu bạn chưa có tài khoản">
+                             <i class="fa fa-edit w3-margin-right"></i>
+                             ĐĂNG KÝ
+                        </a></li>
+                           <BR>
+                        <li class="s5h-bndown-ship"><a href="dangnhap.html" title="Chuyển hàng ngay">
+
+                             <i class="fa fa-truck w3-margin-right"></i>
+                             CHUYỂN HÀNG NGAY
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-xs-12 col-sm-pull-6">
+                    <div class="s5h-bnimg slideInUp wow" data-wow-duration="3s" data-wow-delay="1s" style="visibility: visible; animation-duration: 3s; animation-delay: 1s; animation-name: slideInUp;"><img src="./images/shipper1.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Tại sao -->
+    <!--
+    <div class="s5h-why5ship">
+       <div class="container">
+            <div class="s5h-why5srow clearfix">
+                <div class="s5h-why5scol">
+                    <div class="s5h-why5s-item"> 
+                        <div class="s5h-why5s-icon flipInX wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: visible; animation-duration: 3s; animation-name: flipInX;">
+                            <span><i class="fa fa-paper-plane-o"></i></span>
+                        </div> 
+                        <h3>NHẬN NHANH - CHUYỂN NHANH</h3>
+                        <div class="s5h-why5s-info">
+                            Trang web phát triển từ cộng đồng ship- shop lớn nhất Việt Nam giúp bạn tìm shipper và đơn hàng dễ dàng, nhanh chóng.
+                        </div>
+                    </div>
+                </div>s
+                <div class="s5h-why5scol">
+                    <div class="s5h-why5s-item">
+                        <div class="s5h-why5s-icon flipInX wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: visible; animation-duration: 3s; animation-name: flipInX;">
+                            <span><i class="fa fa-map-o"></i></span>
+                        </div> 
+                        <h3>BẢN ĐỒ</h3>
+                        <div class="s5h-why5s-info">
+                            Tìm kiếm bản đồ và theo dõi lộ trình thông qua định vị GPS ngay trên bản đồ.
+                        </div>
+                    </div>
+                </div>
+                <div class="s5h-why5scol">
+                    <div class="s5h-why5s-item">
+                        <div class="s5h-why5s-icon flipInX wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: visible; animation-duration: 3s; animation-name: flipInX;">
+                            <span><i class="fa fa-map-signs"></i></span>
+                        </div> 
+                        <h3>TIỆN ĐƯỜNG</h3>
+                        <div class="s5h-why5s-info">
+                            Tự động phát hiện vị trí và đề xuất tất cả các đơn hàng trên cung đường bạn đi ship.
+                        </div>
+                    </div>
+                </div>
+                 <div class="s5h-why5scol">
+                    <div class="s5h-why5s-item">
+                        <div class="s5h-why5s-icon flipInX wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: visible; animation-duration: 3s; animation-name: flipInX;">
+                            <span><i class="fa fa-money"></i></span>
+                        </div> 
+                        <h3>TIỀN BẠC</h3>
+                        <div class="s5h-why5s-info">
+                            Thanh toán ngay sau khi trao hàng.
+                        </div>
+                    </div>
+                </div>
+                <div class="s5h-why5scol">
+                    <div class="s5h-why5s-item">
+                        <div class="s5h-why5s-icon flipInX wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: visible; animation-duration: 3s; animation-name: flipInX;">
+                            <span><i class="fa fa-plus-circle"></i></span>
+                        </div> 
+                        <h3>AN TOÀN</h3>
+                        <div class="s5h-why5s-info">
+                            Biết shipper của bạn là ai và đơn hàng bạn nhận như thế nào.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+            <!-- How it Works Section -->
+    <section id="hiw">
+        <div class="container">
+            <div class="s5h-why5ship" style="background-color: #FFFEF2">
+                <div class="col-lg-12 text-center">
+                    <h2 class="s5h-why5s-title">Vì sao nên dùng Need-Shipping.com?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="s5h-why5ship">
+                        <li>
+                        <div class="s5h-why5s-item">
+                        <div class="s5h-why5s-icon flipInX wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: visible; animation-duration: 3s; animation-name: flipInX;">
+                            <span>
+                            <i class="fa fa-shopping-cart"></i>
+                            </span>
+                        </div> 
+                        <h3>NHẬN NHANH - CHUYỂN NHANH</h3>
+                        <div class="s5h-why5s-info">
+                            Trang web phát triển từ cộng đồng ship- shop lớn nhất Việt Nam giúp bạn tìm shipper và đơn hàng dễ dàng, nhanh chóng.
+                        </div>
+                    </div>
+                   <div class="s5h-why5s-item">
+                        <div class="s5h-why5s-icon flipInX wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: visible; animation-duration: 3s; animation-name: flipInX;">
+                            <span><i class="fa fa-map-marker"></i></span>
+                        </div> 
+                        <h3>BẢN ĐỒ</h3>
+                        <div class="s5h-why5s-info">
+                            Tìm kiếm bản đồ và theo dõi lộ trình thông qua định vị GPS ngay trên bản đồ.
+                        </div>
+                    </div>
+                    <div class="s5h-why5s-item">
+                        <div class="s5h-why5s-icon flipInX wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: visible; animation-duration: 3s; animation-name: flipInX;">
+                            <span><i class="fa fa-map-pin"></i></span>
+                        </div> 
+                        <h3>TIỆN ĐƯỜNG</h3>
+                        <div class="s5h-why5s-info">
+                            Tự động phát hiện vị trí và đề xuất tất cả các đơn hàng trên cung đường bạn đi ship.
+                        </div>
+                    </div>
+                    <div class="s5h-why5s-item">
+                        <div class="s5h-why5s-icon flipInX wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: visible; animation-duration: 3s; animation-name: flipInX;">
+                            <span><i class="fa fa-credit-card-alt"></i></span>
+                        </div> 
+                        <h3>CHI PHÍ</h3>
+                        <div class="s5h-why5s-info">
+                            Thanh toán ngay sau khi trao hàng.
+                        </div>
+                    </div>
+                    <div class="s5h-why5s-item">
+                        <div class="s5h-why5s-icon flipInX wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: visible; animation-duration: 3s; animation-name: flipInX;">
+                            <span><i class="fa fa-american-sign-language-interpreting"></i></span>
+                        </div> 
+                        <h3>AN TOÀN</h3>
+                        <div class="s5h-why5s-info">
+                            Biết shipper của bạn là ai và đơn hàng bạn nhận như thế nào.
+                        </div>
+                    </div>
+                </div>
+        </div>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <!--Hướng Dẫn-->        
+    <div id="content-main">
+            <!--PAGES-->
+            <?php
+            switch ($p) {
+                case "huongdan":
+                    require "pages/dieukhoan.html";
+                    break;
+                default:
+                    require "pages/huongdan.html";
+                    break;
+            }
+            ?>
+        </div>
+    <h1 style=" text-align: center; color: #F24738; font-size: 32px; ">Sẽ làm hướng dẫn khi hoàn chỉnh trang web</h1>
+   
+    <div class="s5h-slide">
+        <!--<div class="container">-->
+           <!-- <div class="row">
+                <div class="col-sm-6 col-xs-12 s5h-slshop slideInLeft wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: hidden; animation-duration: 3s; animation-name: none;"> -->
+                 <!-- sẽ làm hướng dẫn sau 
+                    <h3 class="s5h-sltitle">DÀNH CHO SHOP</h3>
+                    <div class="swiper-container s5h-slide-shop swiper-container-horizontal">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-active" style="width: 570px; margin-right: 5px;">
+                                <p class="s5h-slide-noti">Xem vị trí các shipper xung quanh bạn.</p>
+                                <p><img src="./images/maps.png" alt="" style="top: 15px; position: relative;"></p>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next" style="width: 570px; margin-right: 5px;">
+                                <p class="s5h-slide-noti">Mời shipper đồng hành cùng đơn hàng.</p>
+                                <p><img src="./images/2.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide" style="width: 570px; margin-right: 5px;">
+                                <p class="s5h-slide-noti">Chọn shipper cho đơn hàng bạn yêu cầu.</p>
+                                <p><img src="./images/3.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide" style="width: 570px; margin-right: 5px;">
+                                <p class="s5h-slide-noti">Theo dõi lộ trình đơn hàng.</p>
+                                <p><img src="./images/4.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide" style="width: 570px; margin-right: 5px;">
+                                <p class="s5h-slide-noti">Xem tình trạng đơn hàng của bạn.</p>
+                                <p><img src="./images/8.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide" style="width: 570px; margin-right: 5px;">
+                                <p class="s5h-slide-noti">Đánh giá shipper của bạn sau khi đơn hàng giao thành công.</p>
+                                <p><img src="./images/5.png" alt=""></p>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev swiper-button-white swiper-button-disabled"></div>
+                        <div class="swiper-button-next swiper-button-white"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12 s5h-slship slideInRight wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: hidden; animation-duration: 3s; animation-name: none;">
+                    <h3 class="s5h-sltitle">DÀNH CHO SHIP</h3>
+                    <div class="swiper-container s5h-slide-ship swiper-container-horizontal">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-active" style="width: 570px; margin-right: 5px;">
+                                <p class="s5h-slide-noti">Xem thông tin đơn hàng.</p>
+                                <p><img src="./needshipping _files/phone.png" a=""></p>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next" style="width: 570px; margin-right: 5px;">
+                                <p class="s5h-slide-noti">Tính năng tiện đường, giúp bạn tìm đơn hàng trên cung đường bạn đi.</p>
+                                <p><img src="./needshipping _files/10.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide" style="width: 570px; margin-right: 5px;">
+                                <p class="s5h-slide-noti">Chọn đặc điểm đơn hàng bạn mong muốn.</p>
+                                <p><img src="./needshipping _files/9.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide" style="width: 570px; margin-right: 5px;">
+                                <p class="s5h-slide-noti">Tự chọn kiểu xem đơn hàng dạng danh sách.</p>
+                                <p><img src="./needshipping _files/1.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide" style="width: 570px; margin-right: 5px;">
+                                <p class="s5h-slide-noti">Dễ dàng sử dụng map để tìm đường tới shop và khách.</p>
+                                <p><img src="./needshipping _files/4.png" alt=""></p>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev swiper-button-white swiper-button-disabled"></div>
+                        <div class="swiper-button-next swiper-button-white"></div>
+                        -->
+                  <!--  </div>
+                </div>
+            </div>
+        </div>-->
+    </div>
+    <div class="s5h-ftshare">
+        <div class="container">
+            <ul>
+                <li><a href="https://www.facebook.com/dthtien" title=""><i class="fa fa-facebook flipInX wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: hidden; animation-duration: 3s; animation-name: none;"></i></a></li>
+               <!-- <li><a href="#" title=""><i class="fa fa-twitter flipInX wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: hidden; animation-duration: 3s; animation-name: none;"></i></a></li>
+                <li><a href="#" title=""><i class="fa fa-google-plus flipInX wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: hidden; animation-duration: 3s; animation-name: none;"></i></a></li>
+                <li><a href="#" title=""><i class="fa fa-instagram flipInX wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: hidden; animation-duration: 3s; animation-name: none;"></i></a></li>
+                <li><a href="#" title=""><i class="fa fa-skype flipInX wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: hidden; animation-duration: 3s; animation-name: none;"></i></a></li>
+                <li><a href="#" title=""><i class="fa fa-vimeo-square flipInX wow" data-wow-duration="3s" data-wow-delay="0" style="visibility: hidden; animation-duration: 3s; animation-name: none;"></i></a></li>
+                -->
+            </ul>
+        </div>
+    </div>
+<div class="s5h-footer">
+    <div class="container">
+        <h3 class="s5h-ft-title">CONTACT</h3>
+        <ul class="s5h-ft-ctac">
+            
+            <li><a href="mailto:tiendt2311@gmail.com"> <i class="glyphicon glyphicon-envelope"></i> tiendt2311@gmail.com</a>
+            </li>
+            <li>
+                <a href="tel:0965517309"><i class="fa fa-phone"></i>0966883284</a>
+            </li>
+        </ul>
+        <p class="s5h-ft-add">Lớp HTTT2014, Trường Đại học Công Nghệ Thông Tin, Đại học quốc gia thành phố Hồ Chí Minh</p>
+        <div class="row s5h-ft-form">
+            <form id="contact" novalidate="novalidate">
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" name="name" placeholder="Tên">
+                </div>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" name="phone" placeholder="Điện thoại">
+                </div>
+                <div class="col-xs-4">
+                    <input type="email" class="form-control" name="email" placeholder="Email">
+                </div>
+                <div class="col-xs-12">
+                    <textarea rows="4" class="form-control" name="content" placeholder="Nội dung"></textarea>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <button class="btn btn-danger s5h-ft-btn" type="submit">Send</button>
+                </div>
+            </form>            
+        </div>
+    </div>
+</div>
+	<!--<script lang="javascript">(function() {var pname = ( (document.title !='')? document.title : document.querySelector('meta[property="og:title"]').getAttribute('content') );var ga = document.createElement('script'); ga.type = 'text/javascript';ga.src = '//live.vnpgroup.net/js/web_client_box.php?hash=ca42f9e988f19355402ad8fe92c01b58&data=eyJzc29faWQiOjM4MzkzNjQsImhhc2giOiJhZmY2NzUyNWIwYzI1YjU2NjZjNjllN2I0ZTA3Nzg0YyJ9&pname='+pname;var s = document.getElementsByTagName('script');s[0].parentNode.insertBefore(ga, s[0]);})();</script><noscript><a href="http://www.vatgia.com" title="vatgia.com" target="_blank">Tài trợ bởi vatgia.com</a></noscript><noscript><a href="http://vchat.vn" title="vchat.vn" target="_blank">Phát triển bởi vchat.vn</a></noscript>-->
+
+
+</body></html>

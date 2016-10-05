@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+.pac-container
+{
+    background-color:#fff;
+    position:absolute!important;
+    z-index:1000;
+    border-radius:2px;
+    border-top:1px solid #d9d9d9;
+    font-family:Arial,sans-serif;
+    box-shadow:0 2px 6px rgba(0,0,0,0.3);
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden
+}
+.pac-logo:after
+{
+    content:"";
+    padding:1px 1px 1px 0;
+    height:16px;
+    text-align:right;
+    display:block;
+    background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);
+    background-position:right;background-repeat:no-repeat;background-size:120px 14px
+}
+.hdpi.pac-logo:after{
+    background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)
+        }
+.pac-item
+ {
+    cursor:default;
+    padding:0 4px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    line-height:30px;
+    text-align:left;
+    border-top:1px solid #e6e6e6;
+    font-size:11px;
+    color:#999
+}
+.pac-item:hover
+{
+    background-color:#fafafa
+}
+.pac-item-selected,.pac-item-selected:hover
+{
+    background-color:#ebf2fe
+}
+.pac-matched{font-weight:700}
+.pac-item-query{font-size:13px;padding-right:3px;color:#000}
+.pac-icon
+{
+    width:15px;
+    height:20px;
+    margin-right:7px;
+    margin-top:6px;
+    display:inline-block;
+    vertical-align:top;
+    background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);
+    background-size:34px
+}
+.hdpi .pac-icon
+{
+    background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)
+}
+.pac-icon-search{background-position:-1px -1px}
+.pac-item-selected .pac-icon-search{background-position:-18px -1px}
+.pac-icon-marker{background-position:-1px -161px}
+.pac-item-selected .pac-icon-marker{background-position:-18px -161px}
+.pac-placeholder{color:gray}
+</style>
+    <title>Đăng ký</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url" content="#">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:description" content="Need Shipping trang web vận chuyển dành cho cộng đồng ship tìm người - người tìm ship">
+    <meta property="og:image" content="images/logo1.png">	
+	<meta name="google-site-verification" content="DT93bXLXI0Z780b1OTJ0lpChQRka5556aGwP7R7i2xM">
+    <!-- Favicons -->
+    <link rel="icon" href="./images/logo1.png">
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- Js -->
+    <script async="" src="./js/analytics.js.download"></script><script src="./js/jquery-1.11.2.min.js.download"></script>
+    <script src="./js/bootstrap.min.js.download"></script>
+    <script src="./js/swiper.min.js.download"></script>
+    <script src="./js/f-home.js.download"></script>
+    <script src="./js/f-login.js.download"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <script src="./js/ie-emulation-modes-warning.js.download"></script>
+    <!--[if lt IE 9]>
+    <script src="js/libs/html5shiv.min.js"></script>
+    <script src="js/libs/respond.min.js"></script>
+    <![endif]-->
+	
+	<script>
+	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+		document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '1730248857223202');
+		fbq('track', "PageView");	
+		fbq('track', 'ViewContent');
+		fbq('track', 'Search');fbq('track', 'AddToCart');
+		fbq('track', 'AddToWishlist');
+		fbq('track', 'InitiateCheckout');
+		fbq('track', 'AddPaymentInfo');
+		fbq('track', 'Purchase', {value: '1.00', currency: 'USD'});
+		fbq('track', 'Lead');
+		fbq('track', 'CompleteRegistration');
+		</script>
+		<noscript>&lt;img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=1730248857223202&amp;ev=PageView&amp;noscript=1"
+		/&gt;</noscript>
+		<!-- End Facebook Pixel Code -->
+		
+<script type="text/javascript" charset="UTF-8" src="./js/common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./js/util.js.download"></script><script type="text/javascript" charset="UTF-8" src="./js/controls.js.download"></script><script type="text/javascript" charset="UTF-8" src="./js/places_impl.js.download"></script><script type="text/javascript" charset="UTF-8" src="./js/stats.js.download"></script></head>
+<body>
+
+<div class="s5h-header">
+    <div class="container">
+        <a class="s5h-logo" href="dangky.html" title=""><img src="./images/logo1.png" alt=""></a>
+        <span class="s5h-menuicon"><i class="fa fa-bar"></i></span>
+        <ul class="s5h-menu">
+            <li><a class="active" href="http://5ship.vn/" title="TRANG CHỦ">TRANG CHỦ</a> </li>
+            <li><a href="javascript:;" class="link-guide" title="HƯỚNG DẪN">HƯỚNG DẪN</a> </li>
+            <li><a href="dieukhoan.html" title="CHÍNH SÁCH">CHÍNH SÁCH</a> </li>
+            <li><a href="javascript:;" class="link-contact" title="LIÊN LẠC">CONTACT</a> </li>
+            <li>
+                <a href="dangnhap.html" style="color: #F24738; font-size: 18px;" title="Giao Hàng Ngay">
+                  <i class="fa fa-truck w3-margin-right"></i>
+                  GIAO HÀNG NGAY 
+                </a> 
+            </li>
+        </ul>
+    </div>
+</div>
+
+    
+
+<link href="./css/jquery.toastmessage.css" rel="stylesheet">
+<script src="./js/wow.min.js.download"></script>
+<script src="./js/jquery.toastmessage.js.download"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#f-register").validate(
+        {
+            rules: {
+                FullName: {
+                    required: true,
+                    minlength: 3
+                },
+                Email: {
+                    required: true,
+                    email: true
+                },
+                Phone: {
+                    required: true,
+                    minlength: 9,
+                    number: true
+                },
+                Password: {
+                    required: true,
+                    minlength: 6
+                },
+                ConfirmPassword: {
+                    required: true,
+                    equalTo: "#Password"
+                },
+                LicenseMoto: {
+                    required: true,
+                    minlength: 8
+                },
+                Address: {
+                    required: true
+                }
+
+            },
+            messages: {
+                FullName: {
+                    required: "Vui lòng nhập họ tên",
+                    minlength: "Yêu cầu tối thiểu 7 ký tự"
+                },
+                Email: {
+                    required: "Vui lòng nhập địa chỉ email",
+                    email: "Vui lòng nhập đúng email"
+                },
+                Phone: "Vui lòng nhập số điện thoại",
+                Password: {
+                    required: "Vui lòng nhập mật khẩu",
+                    minlength: "Mật khẩu của bạn quá ngắn"
+                },
+                ConfirmPassword: {
+                    required: "Vui lòng nhập xác nhận mật khẩu",
+                    equalTo: "Nhập lại mật khẩu không đúng"
+                },
+                LicenseMoto: {
+                    required: "Vui lòng nhập biển số xe"
+                },
+                Address: {
+                    required: "Vui lòng nhập địa chỉ"
+                }
+            },
+            submitHandler: function () {
+
+                if ($("#IsShop").is(":checked") && ($("#xpoint").val() == null || $("#xpoint").val() == '')) {
+                    $().toastmessage('showErrorToast', 'Bạn vui lòng sử dụng địa chỉ đã gợi ý');
+                    return;
+                }
+
+                if (!$("#IsShop").is(":checked") && !$("#IsShipper").is(":checked")) {
+                    $().toastmessage('showErrorToast', 'Bạn muốn làm shipper hay shop nhỉ ?');
+                    return;
+                }
+
+                $(".register-submit").off().text("Đang gửi dữ liệu...");
+                $().toastmessage("showWarningToast", 'Đang gửi dữ liệu...');
+                $.ajax({
+                    url: $("#f-register").attr("action"),
+                    method: $("#f-register").attr("method"),
+                    data: {
+                        AddressDetail: $("input[name='AddressDetail']").val(),
+                        account: {
+                            UserName: $("input[name='UserName']").val(),
+                            LastName: $("#FullName").val(),
+                            Email: $("input[name='Email']").val(),
+                            Password: $("input[name='Password']").val(),
+                            IsShop: $("#IsShop").is(":checked"),
+                            IsShipper: $("#IsShipper").is(":checked"),
+                            Address: $("#add_autocomplete").val(),
+                            Phone: $("#Phone").val(),
+                            Provider: $("input[name='Provider']").val()
+                        },
+                        position: {
+                            XPoint: $("#xpoint").val(),
+                            YPoint: $("#ypoint").val(),
+                            Address: $("#add_autocomplete").val()
+
+                        },
+                        licenseMoto: $("#LicenseMoto").val()
+                    }
+                }).done(function (data) {
+                    if (!data.error) {
+                        $().toastmessage('showSuccessToast', data.message);
+                        window.location.replace(data.url ? data.url : "/");
+                    } else {
+                        $().toastmessage('showErrorToast', data.message);
+                    }
+                }).fail(function () {
+                    $().toastmessage('showErrorToast', 'Chức năng đang được bảo trì, vui lòng thử lại sau');
+                });
+            }
+        });
+
+        $("#IsShipper").click(function () {
+            $(".shipper-field").removeClass("hidden");
+            $(".shop-field").addClass("hidden");
+        });
+
+        $("#IsShop").click(function () {
+            $(".shipper-field").addClass("hidden");
+            $(".shop-field").removeClass("hidden");
+        });
+    });
+</script>
+<div class="s5h-userform">
+    <div class="s5h-uformbox">
+        <div class="s5h-uform">
+            <form class="s5h-uform-login" id="f-register" method="post" action="dangky.html" novalidate="novalidate">                
+                <input name="__RequestVerificationToken" type="hidden" value="gv4g00BlKJDjxtTmEbf3GSIMUZw4L8Ug4Q7mHtC2mFmSzxIxgQB8WP4lFcNU9S648mjB7uyhOwqspDE8pCf1LfdT9KkJbkdvSNqy42J2YFc1">
+                <input type="hidden" id="Provider" name="Provider" value="fship">
+                <input type="hidden" name="UserName" value="">
+                <h3 class="s5h-uform-title">Đăng ký</h3>
+                <div class="form-group has-feedback">
+                    <input type="text" name="Email" class="form-control" placeholder="Email" value="">
+                    <span class="glyphicon s5h-gly-code form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="password" name="Password" id="Password" class="form-control" placeholder="Mật khẩu">
+                    <span class="glyphicon s5h-gly-pass form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="password" name="ConfirmPassword" id="ConfirmPassword" class="form-control" placeholder="Nhập lại mật khẩu">
+                    <span class="glyphicon s5h-gly-pass form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="text" name="FullName" class="form-control" id="FullName" value="" placeholder="Họ tên">
+                    <span class="glyphicon s5h-gly-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="text" name="Phone" id="Phone" class="form-control" placeholder="Số điện thoại">
+                    <span class="glyphicon s5h-gly-phone form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" name="AddressDetail" placeholder="Số nhà, ngõ, ngách">
+                    <span class="glyphicon s5h-gly-address form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" name="Address" id="add_autocomplete" autocomplete="off" value="" placeholder="Đường phố">
+                    <span class="glyphicon s5h-gly-address form-control-feedback"></span>
+                    <input type="hidden" name="XPoint" id="xpoint">
+                    <input type="hidden" name="YPoint" id="ypoint">
+                </div>
+                <div class="form-group has-feedback hidden shipper-field">
+                    <input type="text" name="LicenseMoto" id="LicenseMoto" class="form-control" placeholder="Biển số xe">
+                    <span class="glyphicon s5h-gly-moto form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback shipper-field">
+                    <input type="text" name="ReferralCodeUsed" id="ReferralCodeUsed" class="form-control" placeholder="Mã giới thiệu">
+                    <span class="glyphicon s5h-gly-moto form-control-feedback"></span>
+                </div>
+                <div class="form-group">
+                    <div class="register-radio">
+                        <input type="radio" name="TypeAcc" id="IsShop">
+                        <label class="radio-shop" for="IsShop">Tôi muốn trở thành Shop</label>
+                    </div>
+                    <div class="register-radio">
+                        <input type="radio" name="TypeAcc" id="IsShipper">
+                        <label class="radio-ship" for="IsShipper">Tôi muốn trở thành Shipper</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-default s5h-uform-btn">Đăng ký</button>
+                <p>&nbsp;</p>
+                
+            </form>
+        </div>
+        <div class="s5h-uform-reg">
+            <div class="s5h-uform-regbox">
+                <h3 class="s5h-uform-regtit">Đăng nhập</h3>
+                <p>Bạn đã có tài khoản ?</p>
+                <p class="s5h-uform-regbtn">
+                    <a class="btn" href="dangnhap.html">Đăng nhập ngay</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    // This example displays an address form, using the autocomplete feature
+    // of the Google Places API to help users fill in the information.
+
+    var placeSearch, autocomplete;
+
+    function initAutocomplete() {
+        // Create the autocomplete object, restricting the search to geographical
+        // location types.
+        autocomplete = new google.maps.places.Autocomplete(
+            /** type {!HTMLInputElement} */
+            (document.getElementById('add_autocomplete')),
+            { types: ['geocode'] });
+
+        // When the user selects an address from the dropdown, populate the address
+        // fields in the form.
+        codeAddress();
+        autocomplete.addListener('place_changed', fillInAddress);
+    }
+
+    // [START region_fillform]
+    function fillInAddress() {
+        // Get the place details from the autocomplete object.
+        var place = autocomplete.getPlace().geometry.location;
+        $("#xpoint").val(place.lat());
+        $("#ypoint").val(place.lng());
+    }
+
+    function codeAddress() {
+        var address = document.getElementById("add_autocomplete").value;
+        if (address) {
+            var geocoder = new google.maps.Geocoder();
+            geocoder.geocode({ 'address': address }, function (results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    var place = results[0].geometry.location;
+                    $("#xpoint").val(place.lat());
+                    $("#ypoint").val(place.lng());
+                } else {
+                    console.info("Geocode was not successful for the following reason: " + status);
+                }
+            });
+        }
+    }
+</script>
+<script src="./singup_files/jquery.validate.js.download"></script>
+
+
+<script src="./singup_files/js" async="" defer=""></script>
+
+<div class="s5h-footer">
+    <div class="container">
+        <h3 class="s5h-ft-title">CONTACT</h3>
+        <ul class="s5h-ft-ctac">
+            
+            <li><a href="mailto:tiendt231196@gmail.com"> <i class="fa fa-mail"></i> tiendt2311@gmail.com</a></li>
+            <li>
+                <a href="tel:0966883284"><i class="fa fa-phone"></i>  0966883284</a>
+            </li>
+        </ul>
+        <p class="s5h-ft-add">Lớp HTTT2014, Trường đại học Công Nghệ Thông Tin- Đại học quốc gia thành phố Hồ Chí Minh</p>
+        <div class="row s5h-ft-form">
+            <form id="contact" novalidate="novalidate">
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" name="name" placeholder="Tên">
+                </div>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" name="phone" placeholder="Điện thoại">
+                </div>
+                <div class="col-xs-4">
+                    <input type="email" class="form-control" name="email" placeholder="Email">
+                </div>
+                <div class="col-xs-12">
+                    <textarea rows="4" class="form-control" name="content" placeholder="Nội dung"></textarea>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <button class="btn btn-danger s5h-ft-btn" type="submit">Gửi</button>
+                </div>
+            </form>            
+        </div>
+    </div>
+</div>
+
+    <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-74786165-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+	
+
+
+<div class="pac-container pac-logo" style="display: none; width: 358px; position: absolute; left: 553px; top: 708px;"></div></body></html>

@@ -1,0 +1,219 @@
+.s5h-userform{
+    height: 100%;
+    min-height: 580px;
+    width: 100%;
+    background: url("../images/banner.jpg") fixed;
+    background-size: cover;
+    text-align: center;
+    margin:88px 0 0 0;
+}
+.s5h-uformbox{
+    display: inline-block;
+    margin: 40px auto 10px;
+}
+.s5h-uform{
+    width: 470px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    padding: 45px 55px;
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.s5h-uform-title{
+    font-size: 28px;
+    margin-bottom: 35px;
+    color: #4e4d55;
+    text-align: left;
+}
+.s5h-uform .form-control{
+    height: 50px;
+}
+.s5h-uform .s5h-gly-pass{
+    top: 14px !important;
+    right: 10px;
+    width: 21px;
+    height: 21px;
+    background: url("/Content/v3/images/icons.png") no-repeat -189px 0;
+}
+.s5h-uform .s5h-gly-user{
+    top: 14px !important;
+    right: 10px;
+    width: 22px;
+    height: 22px;
+    background: url("/Content/v3/images/icons.png") no-repeat -164px 0;
+}
+.s5h-uform .s5h-gly-code{
+    top: 14px !important;
+    right: 10px;
+    width: 30px;
+    height: 20px;
+    background: url("/Content/v3/images/icons.png") no-repeat -212px 0;
+}
+
+.s5h-uform .s5h-gly-address{
+    top: 14px !important;
+    right: 2px;
+    width: 30px;
+    height: 25px;
+    background: url("/Content/images/address.png") no-repeat;
+}
+.s5h-uform .s5h-gly-moto{
+    top: 14px !important;
+    right: 5px;
+    width: 30px;
+    height: 22px;
+    background: url("/Content/images/motorbike.png") no-repeat;
+}
+
+.s5h-uform .form-group {
+    margin-bottom: 20px;
+}
+.s5h-uform-forgetpass{
+    text-align: right;
+    margin-bottom: 20px;
+}
+.s5h-uform-forgetpass a{
+    font-size: 14px;
+    color: #9c9c9c;
+    text-decoration: underline;
+}
+.s5h-uform-btn,
+.s5h-uform-btn-load,
+.s5h-uform-btn-load-forget{
+    width: 100%;
+    height: 50px;
+    background: #F24738 !important;
+    color: #ffffff;
+    font-size: 18px;
+}
+.s5h-uform-btn-load,
+.s5h-uform-btn-load-forget{
+    display:none;
+}
+.s5h-uform-btn-load i,
+.s5h-uform-btn-load-forget i{
+    margin:0 10px 0 0;
+    font-size:30px;
+}
+.s5h-uform-btn:active,
+.s5h-uform-btn:focus,
+.s5h-uform-btn:hover{
+    background: #F24738;
+    color: #ffffff;
+    text-decoration: none;
+}
+.s5h-uform-or{
+    text-align: center;
+    padding: 25px 0;
+}
+.s5h-uform-btnfb{
+    width: 100%;
+    height: 50px;
+    padding: 13px 0;
+    background-color: #ffffff;
+    border: 1px solid #c2cde3;
+    color: #6682ba;
+    font-size: 16px;
+    text-align: center;
+}
+.s5h-uform-btnfb i{
+    padding-right: 6px;
+    font-size: 20px;
+}
+.s5h-uform-btnfb:active,
+.s5h-uform-btnfb:focus,
+.s5h-uform-btnfb:hover{
+    border: 1px solid #969fb0;
+    color: #576f9f;
+    background-color: #efefef;
+}
+
+.s5h-uform-reg{
+    width: 438px;
+    padding: 20px 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+.s5h-uform-regbox{
+    background-color: rgba(230,127,81,0.8);
+    height: 460px;
+    width: 438px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    padding: 0 40px;
+    color: #eba171;
+    opacity: 0.8;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+}
+.s5h-uform-regbox:hover{
+    opacity: 1;
+}
+.s5h-uform-regtit{
+    font-size: 28px;
+    color: #ffe0d3;
+    margin-bottom: 15px;
+}
+.s5h-uform-regbtn a{
+    border: 1px solid #bb8362;
+    color: #ffede1;
+    margin: 15px 0;
+}
+.s5h-uform-regbtn a:hover{
+    color: #ffffff;
+    border: 1px solid #d69670;
+}
+.s5h-uform-sendag{
+    margin-bottom: 45px;
+    text-align: left;
+}
+.s5h-uform-sendag a{
+    color: #3a79cf;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .s5h-uform-regbox {
+        padding: 0 20px;
+    }
+    .s5h-uform {
+        padding: 10px 20px;
+    }
+}
+@media (max-width: 580px) {
+    .s5h-uform {
+        width: 100%;
+        padding: 20px;
+        display: block;
+    }
+    .s5h-uform-regbox,
+    .s5h-uform-reg {
+        width: 100%;
+    }
+    .s5h-uform-regbox {
+        height: 200px;
+    }
+    .s5h-uformbox{
+        padding: 15px;
+    }
+    .s5h-uform-btnfb {
+        font-size: 13px;
+    }
+}
+
+label.error {
+    color: red;
+    text-align: left;
+    display: block;
+    padding: 2px;
+}
+.register-radio {
+    text-align: left;
+    padding: 5px;
+    color: #555;
+}
