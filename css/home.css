@@ -857,3 +857,46 @@ section h3.section-subheading
     display: inline-block;
     width: 100%;
 }
+/*validate form contact*/
+#contact label.error{
+    position: absolute;
+    bottom: 10px;
+    font-size:12px;
+    color:#f96f3e;
+    font-style:italic;
+}
+section h3.section-subheading 
+{
+    font-size: 16px;
+    text-transform: none;
+    font-weight: 400;
+    margin-bottom: 75px;
+}
+.term-title {
+    color: #F24738;
+    font-size: 18px;
+    margin: 35px 0;
+    display: inline-block;
+    width: 100%;
+}
+  .carousel-control.right, .carousel-control.left {
+   
+   color: #F24738;
+    background-color: #ffffff;
+  }
+  .carousel-indicators li {
+      border-color: #F24738;
+  }
+  .carousel-indicators li.active {
+      background-color: #F24738;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
