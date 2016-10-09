@@ -2,78 +2,6 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<style type="text/css">
-.pac-container
-{
-    background-color:#fff;
-    position:absolute!important;
-    z-index:1000;
-    border-radius:2px;
-    border-top:1px solid #d9d9d9;
-    font-family:Arial,sans-serif;
-    box-shadow:0 2px 6px rgba(0,0,0,0.3);
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-    box-sizing:border-box;
-    overflow:hidden
-}
-.pac-logo:after
-{
-    content:"";
-    padding:1px 1px 1px 0;
-    height:16px;
-    text-align:right;
-    display:block;
-    background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);
-    background-position:right;background-repeat:no-repeat;background-size:120px 14px
-}
-.hdpi.pac-logo:after{
-    background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)
-        }
-.pac-item
- {
-    cursor:default;
-    padding:0 4px;
-    text-overflow:ellipsis;
-    overflow:hidden;
-    white-space:nowrap;
-    line-height:30px;
-    text-align:left;
-    border-top:1px solid #e6e6e6;
-    font-size:11px;
-    color:#999
-}
-.pac-item:hover
-{
-    background-color:#fafafa
-}
-.pac-item-selected,.pac-item-selected:hover
-{
-    background-color:#ebf2fe
-}
-.pac-matched{font-weight:700}
-.pac-item-query{font-size:13px;padding-right:3px;color:#000}
-.pac-icon
-{
-    width:15px;
-    height:20px;
-    margin-right:7px;
-    margin-top:6px;
-    display:inline-block;
-    vertical-align:top;
-    background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);
-    background-size:34px
-}
-.hdpi .pac-icon
-{
-    background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)
-}
-.pac-icon-search{background-position:-1px -1px}
-.pac-item-selected .pac-icon-search{background-position:-18px -1px}
-.pac-icon-marker{background-position:-1px -161px}
-.pac-item-selected .pac-icon-marker{background-position:-18px -161px}
-.pac-placeholder{color:gray}
-</style>
     <title>Đăng ký</title>
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -122,128 +50,6 @@
 <link href="./css/jquery.toastmessage.css" rel="stylesheet">
 <script src="./js/wow.min.js"></script>
 <script src="./js/jquery.toastmessage.js"></script>
-<script type="text/javascript">
-    $(function () {
-        $("#f-register").validate(
-        {
-            rules: {
-                FullName: {
-                    required: true,
-                    minlength: 3
-                },
-                Email: {
-                    required: true,
-                    email: true
-                },
-                Phone: {
-                    required: true,
-                    minlength: 9,
-                    number: true
-                },
-                Password: {
-                    required: true,
-                    minlength: 6
-                },
-                ConfirmPassword: {
-                    required: true,
-                    equalTo: "#Password"
-                },
-                LicenseMoto: {
-                    required: true,
-                    minlength: 8
-                },
-                Address: {
-                    required: true
-                }
-
-            },
-            messages: {
-                FullName: {
-                    required: "Vui lòng nhập họ tên",
-                    minlength: "Yêu cầu tối thiểu 7 ký tự"
-                },
-                Email: {
-                    required: "Vui lòng nhập địa chỉ email",
-                    email: "Vui lòng nhập đúng email"
-                },
-                Phone: "Vui lòng nhập số điện thoại",
-                Password: {
-                    required: "Vui lòng nhập mật khẩu",
-                    minlength: "Mật khẩu của bạn quá ngắn"
-                },
-                ConfirmPassword: {
-                    required: "Vui lòng nhập xác nhận mật khẩu",
-                    equalTo: "Nhập lại mật khẩu không đúng"
-                },
-                LicenseMoto: {
-                    required: "Vui lòng nhập biển số xe"
-                },
-                Address: {
-                    required: "Vui lòng nhập địa chỉ"
-                }
-            },
-            submitHandler: function () {
-
-                if ($("#IsShop").is(":checked") && ($("#xpoint").val() == null || $("#xpoint").val() == '')) {
-                    $().toastmessage('showErrorToast', 'Bạn vui lòng sử dụng địa chỉ đã gợi ý');
-                    return;
-                }
-
-                if (!$("#IsShop").is(":checked") && !$("#IsShipper").is(":checked")) {
-                    $().toastmessage('showErrorToast', 'Bạn muốn làm shipper hay shop nhỉ ?');
-                    return;
-                }
-
-                $(".register-submit").off().text("Đang gửi dữ liệu...");
-                $().toastmessage("showWarningToast", 'Đang gửi dữ liệu...');
-                $.ajax({
-                    url: $("#f-register").attr("action"),
-                    method: $("#f-register").attr("method"),
-                    data: {
-                        AddressDetail: $("input[name='AddressDetail']").val(),
-                        account: {
-                            UserName: $("input[name='UserName']").val(),
-                            LastName: $("#FullName").val(),
-                            Email: $("input[name='Email']").val(),
-                            Password: $("input[name='Password']").val(),
-                            IsShop: $("#IsShop").is(":checked"),
-                            IsShipper: $("#IsShipper").is(":checked"),
-                            Address: $("#add_autocomplete").val(),
-                            Phone: $("#Phone").val(),
-                            Provider: $("input[name='Provider']").val()
-                        },
-                        position: {
-                            XPoint: $("#xpoint").val(),
-                            YPoint: $("#ypoint").val(),
-                            Address: $("#add_autocomplete").val()
-
-                        },
-                        licenseMoto: $("#LicenseMoto").val()
-                    }
-                }).done(function (data) {
-                    if (!data.error) {
-                        $().toastmessage('showSuccessToast', data.message);
-                        window.location.replace(data.url ? data.url : "/");
-                    } else {
-                        $().toastmessage('showErrorToast', data.message);
-                    }
-                }).fail(function () {
-                    $().toastmessage('showErrorToast', 'Chức năng đang được bảo trì, vui lòng thử lại sau');
-                });
-            }
-        });
-
-        $("#IsShipper").click(function () {
-            $(".shipper-field").removeClass("hidden");
-            $(".shop-field").addClass("hidden");
-        });
-
-        $("#IsShop").click(function () {
-            $(".shipper-field").addClass("hidden");
-            $(".shop-field").removeClass("hidden");
-        });
-    });
-</script>
 <div class="s5h-userform">
     <div class="s5h-uformbox">
         <div class="s5h-uform">
@@ -360,10 +166,10 @@
         }
     }
 </script>
-<script src="./singup_files/jquery.validate.js.download"></script>
+<script src="./js/jquery.validate.js"></script>
 
 
-<script src="./singup_files/js" async="" defer=""></script>
+<script src="./js/js" async="" defer=""></script>
 
 <div class="s5h-footer">
     <div class="container">
