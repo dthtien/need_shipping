@@ -152,7 +152,7 @@ a, a:hover, a:focus, a:active {
     position: relative;
     font-size: 22px;
     color: #fff;
-    margin: 167px 0 0px;
+    margin: 102px 0 0px;
 }
 .s5h-bntitle:after 
 {
@@ -164,9 +164,9 @@ a, a:hover, a:focus, a:active {
    height: 2px;
    background: #bbb7b4;
     }
-    .s5h-bntitle p:first-child {
-        margin-bottom: 20px
-    }
+.s5h-bntitle p:first-child {
+    margin-bottom: 20px
+}
 
 .s5h-bninfo {
     font-size: 14px;
@@ -709,3 +709,17 @@ section h3.section-subheading
   .item span {
       font-style: normal;
   }
+.btn-pink,
+.btn-dark:hover {
+    text-decoration: none;
+    background-color: #F24738;
+}
+
+.btn-pink:hover {
+    text-decoration: none;
+    background-color: #F24738;
+}
+
+.button-section .btn:nth-child(2n+1) {
+    margin-right: 20px;
+}
