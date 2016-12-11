@@ -55,7 +55,7 @@ class Tblphanhoi extends \yii\db\ActiveRecord
         ];
     }
 }
-<?php 
+
     include 'data_access_helper.php'
     //get information
     $name =$_GET["name"];
@@ -65,6 +65,6 @@ class Tblphanhoi extends \yii\db\ActiveRecord
     //insert to database
     $db=new DataAccessHelper;
     $db->connect();
-    $db->executeNonQuery("INSERT INTO tblphanhoi(name,phone,email,content) VALUE('$name',$phone',$email','$content')");
+    $db->executeNonQuery("INSERT INTO tblphanhoi(name,phone,email,content) VALUES ('$name','$phone',$email','$content')");
     $db->close();
 ?>
